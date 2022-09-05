@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <style>
+
+    </style>
+
+    <!-- Animation Scripts -->
+<link href="stylesheets/aos.css" rel="stylesheet">
+<script src="javascript/aos.js"></script>
+
+</head>
+
+<header>
+    <!-- NAVIGATION BAR START -->
+    <nav class="navbar mr-auto navbar-expand-md text-light p-0 navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarhide" aria-controls="navbarhide" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars	 text-light"></span>
+    
+    </button>
+    <div class="navbar-brand pl-4 col-2"><a href="index.html"><img src="img/logo.png" alt="logo" class="img-fluid main-logo" /></a></div>
+                <div id="navbarhide" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto text-light">
+    
+                    <li class="p-4 nav-item active"> <a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li class="p-4 nav-item"><a href="bottles.html">Plastic Bottles</a></li>
+                    <li class="p-4 nav-item"><a href="gallons.html">Plastic Gallons</a></li>
+                    <li class="p-4 nav-item"><a href="jars.html">Plastic Jars</a></li>
+                    <li class="p-4 nav-item"><a href="kitchen.html">Kitchen Items</a></li>
+                    <li class="p-4 nav-item"><a href="gallery.html">Gallery</a></li>
+
+                    <li class="p-4 nav-item"><a href="about.html">About</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+<!-- NAVIGATION BAR END  -->
+        <!-- NAVIGATION BAR END  -->
+
+</header>
+
+<body class="petsection2">
+
+
+    <!-- MAIN CONTAINER START -->
+    <div class="col-11 mx-auto mb-5 pb-5 border bg-white">
+
+            <h4 class="text-center text-secondary pt-4">Feedback / Review</h4>
+            <hr class="w-50">
+    
+            <!-- BREADCRUMBS START -->
+            <ol class="breadcrumb mx-4" id="bcrumb">
+    
+            </ol>
+            <!-- BREADCRUMBS END -->
+    
+            <!-- OUTER ROW START -->
+            <div class="row mx-auto px-3">
+    
+                <!-- MAIN SECTION START -->
+                <section class="col-xl-9 col-md-12 col-sm-12 mx-auto" data-aos="fade-up" data-aos-duration="1000"> 
+    
+        <div class="imagebg"></div>
+        <div class="row " style="margin-top: 50px">
+            <div class="col-md-12 text-center justify-content-center col-md-offset-3 form-container">
+                <h1>Customer's Feedback</h1>
+                <p>
+                    Please provide your feedback below:
+                </p>
+                <form role="form" method="post" id="reused_form">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label>How do you rate your overall experience?</label>
+                            <p>
+                                <label class="radio-inline">
+                            <input type="radio" name="experience" id="radio_experience" value="bad" >
+                            excellent
+                            </label>
+
+                                <label class="radio-inline">
+                            <input type="radio" name="experience" id="radio_experience" value="average" >
+                            good
+                            </label>
+
+                                <label class="radio-inline">
+                            <input type="radio" name="experience" id="radio_experience" value="good" >
+                              average
+                            </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="comments">
+                                feedback:</label>
+                            <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="name">
+                                Your Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label for="email">
+                                Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button type="submit" class="btn btn-lg btn-warning btn-block">submit </button>
+                        </div>
+                    </div>
+
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Posted your feedback successfully!</h3>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+                </div>
+            </div>
+        </div>
+        <!-- MAIN CONTAINER END -->
+    
+        <!-- CARD OPENER START -->
+        <div id="popupbox" class="col-md-8 border p-3">
+            <h3 class="text-center">Product Details</h3><span id="btnclose" class="closebtn"><i class="fa fa-window-close" aria-hidden="true"></i>
+            </span>
+            <hr class="">
+            <div class="row">
+                <div class="col-5 text-center">
+                    <img class="img-fluid" id="showimg" src="">
+                </div>
+                <div class="col-7 border-left">
+                    <h5 id="ptitle">Title</h3>
+                        <div id="stars"></div>
+                        <hr>
+                        <div class="row">
+    
+                            <div class="col">
+                                <h3 id="theprice" class="h2 my-3">price here</h3>
+                                <p> <i class="fa fa-check-circle text-success" aria-hidden="true"></i> Available In Stock</p>
+                                <p> <i class="fa fa-check-circle text-success" aria-hidden="true"></i> Home Delivery Available</p>
+                                <p><i class="fa fa-check-circle text-success"></i> 7 Days Return Waranty</p>
+    
+                                <div class="row p-3">
+                                    <h5 class="h5 mr-3">Quantity:</h5>
+                                    <i id="minus" class="fa fa-minus-square h3" aria-hidden="true" onclick="valueMinus()"></i>
+                                    <input id="howmany" type="text" id="inc" min="0" value="0" style="height: 30px;border-radius: 5px;"></input>
+                                    <i id="plus" class="fa fa-plus-square h3" onclick="newnewValuePLus()"></i>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3 class="mt-3">Specifications</h3>
+                                <div id="theSpecs">
+    
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                </div>
+                <div class="col text-center m-5">
+                    <button class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> Add To Card</button>
+                    <a id="pdfdown"><button class="btn btn-lg btn-dark">Download PDF</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- SIDEBAR START -->
+     <aside class="col-md-3 col-sm-12 border mt-3">
+            <ul class="list-group">
+                <h4 class="p-3 text-center ">CATEGORIES</h3>
+                    <a href="bottles.html">
+                        <li class="list-group-item list-group-item-action ">Plastic Bottle</li>
+                    </a>
+                    <a href="gallons.html">
+                        <li class="list-group-item list-group-item-action ">Plastic Gallons</li>
+                    </a>
+                    <a href="jars.html">
+                        <li class="list-group-item list-group-item-action ">Plastic Jars</li>
+                    </a>
+                    <a href="kitchen.html">
+                        <li class="list-group-item list-group-item-action">Kitchen Items</li>
+                    </a>
+
+            </ul>
+        </aside>
+        <!-- SIDEBAR END -->
+</div>
+    </div>
+
+        <!-- CARD OPENER END -->
+        
+    </body>
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+      </script>
+    
+    <!-- FOOTER START -->
+    <footer class="col-md-12 col-sm-12 text-light h6 petsection m-0">
+    
+        <div class="row text-center mx-auto col-7 flinks">
+            <hr class="bg-light ">
+    
+            <div class="col-md-3"><i class="fab fa-facebook"></i></div>
+            <div class="col-md-3"><i class="fab fa-twitter-square"></i></div>
+            <div class="col-md-3"><i class="fab fa-instagram"></i></div>
+            <div class="col-md-3"><i class="fab fa-linkedin"></i></div>
+    
+        </div>
+        <hr class="bg-light w-50">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-12 col-xs-3 m-3 p-5 ">
+                <h4><i class="fas fa-folder"></i> Our Products</h4>
+                <li class="p-2"><a class="text-light" href="bottles.html">Plastic Bottles</a></li>
+                <li class="p-2"><a class="text-light" href="gallons.html">Plastic Gallons</a></li>
+                <li class="p-2"><a class="text-light" href="jars.html">Plastic Jars</a></li>
+                <li class="p-2"><a class="text-light" href="kitchen.html">Kitchen Items</a></li>
+    
+            </div>
+            <div class="col-md-3 col-sm-12  m-3 p-5">
+                <h4><i class="fas fa-folder"></i> Usefull Links</h4>
+    
+                <li class="p-2"><a class="text-light" href="about.html">About Us</a></li>
+                <li class="p-2"><a class="text-light" href="contact.html">Contact Us</a></li>
+                <li class="p-2"><a class="text-light" href="feedback.html">Feedback / Review</a></li>
+                <li class="p-2"><a class="text-light" href="sitemap.html">Sitemap</a></li>
+                <li class="p-2"><a class="text-light" href="faq.html">Frequently Asked Question</a></li>
+    
+    
+            </div>
+            <div class="col-md-3 col-sm-12  m-3 pt-5 ">
+                <h4><i class="fas fa-address-card"></i> Contact Info</h4>
+                <ul>
+                    <li class="p-2">London<br>20-22 Wenlock Road<br>N1 7GU</li>
+                    <li class="p-2">+1 (813) 322 334</li>
+                    <li class="p-2">Contact@petbottles.com</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- FOOTER END -->
+    
+    
+    
+    <!-- jQuery library -->
+    <script src="javascript/jquery-3.4.1.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="javascript/bootstrap.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <script type="text/javascript" src="javascript/all.js"></script>
+    
+    
+    <!-- CUSTOM JS -->
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <script type="text/javascript" src="javascript/js2.js"></script>
+    
+    </html>
